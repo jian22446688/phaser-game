@@ -4,8 +4,8 @@ import '@babel/polyfill'
 import MainScene from './scenes/mainScene'
 import PreloadScene from './scenes/preloadScene'
 
-const DEFAULT_WIDTH = 1024
-const DEFAULT_HEIGHT = 768
+const DEFAULT_WIDTH = 1024 - 200
+const DEFAULT_HEIGHT = 768 - 200
 
 const config = {
   title: 'mygame',
