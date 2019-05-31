@@ -1,0 +1,58 @@
+{
+  "name": "phaser-project-template-es6",
+  "version": "3.17.0",
+  "description": "Phaser 3 starter template with ES6 and webpack.",
+  "homepage": "https://github.com/yandeu/phaser-project-template-es6#readme",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack/webpack.dev.js",
+    "build": "webpack --config webpack/webpack.prod.js"
+  },
+  "keywords": [
+    "Phaser",
+    "Phaser 3",
+    "Phaser3",
+    "html5 game",
+    "TypeScript",
+    "webpack",
+    "starter"
+  ],
+  "author": {
+    "name": "Yannick Deubel",
+    "url": "https://github.com/yandeu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yandeu/phaser-project-template-es6.git"
+  },
+  "template": {
+    "name": "phaser-project-template-es6",
+    "url": "https://github.com/yandeu/phaser-project-template-es6",
+    "author": "Yannick Deubel (https://github.com/yandeu)"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^5.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1",
+    "webpack-obfuscator": "^0.18.0",
+    "workbox-webpack-plugin": "^4.0.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "phaser": "^3.17.0"
+  }
+}
