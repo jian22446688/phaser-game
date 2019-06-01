@@ -10,19 +10,17 @@ export default class PreloadScene extends Phaser.Scene {
     let daijiarr = []
     for (let i = 0; i < 50; i++) {
       if (i + 1 < 10) {
-        daijiarr.push('assets/admin/daiji/未命名-1000' + (i + 1) + '.png')
+        this.load.image('daiji_'+ (i+1), 'assets/admin/daiji/未命名-1000' + (i + 1) + '.png')
       }else {
-        daijiarr.push('assets/admin/daiji/未命名-100' + (i + 1) + '.png')
+        this.load.image('daiji_'+ (i+1), 'assets/admin/daiji/未命名-100' + (i + 1) + '.png')
       }
     }
-    this.load.spritesheet('admin_daiji', daijiarr, {
-      frameWidth: 600,
-      frameHeight: 700
-    })
-    
+
     this.load.image('bg_bg2', 'assets/bg_2.png')
     this.load.image('bg_bg1', 'assets/bg_1.png')
+    this.load.image('bg_bg3', 'assets/bg_3.png')
     this.load.image('select_bg', 'assets/sele_bg.png')
+    this.load.image('bg_guang', 'assets/guangyuan.png')
   }
 
   create() {

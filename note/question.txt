@@ -14,3 +14,9 @@ titles.on('pointerdown', (event) => {
   // this.input.emit('cc-click')
   
 })
+
+
+3. 划线
+    var graphics = this.add.graphics();
+    graphics.lineStyle(2, 0xff0000);
+    graphics.strokeRect(player.x, player.y, 160, 260);
