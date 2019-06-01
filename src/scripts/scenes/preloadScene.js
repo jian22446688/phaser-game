@@ -5,6 +5,21 @@ export default class PreloadScene extends Phaser.Scene {
 
   preload() {
     this.load.image('phaser-logo', 'assets/img/phaser-logo.png')
+    this.load.audio('au_btns', 'assets/audio/btns.mp3')
+    this.load.audio('au_greatwork', 'assets/audio/GreatWork.wav')
+    let daijiarr = []
+    for (let i = 0; i < 50; i++) {
+      if (i + 1 < 10) {
+        daijiarr.push('assets/admin/daiji/未命名-1000' + (i + 1) + '.png')
+      }else {
+        daijiarr.push('assets/admin/daiji/未命名-100' + (i + 1) + '.png')
+      }
+    }
+    this.load.spritesheet('admin_daiji', daijiarr, {
+      frameWidth: 600,
+      frameHeight: 700
+    })
+    
   }
 
   create() {

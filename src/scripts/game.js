@@ -18,6 +18,8 @@ const config = {
   //   height: DEFAULT_HEIGHT
   // },
   type: Phaser.AUTO,
+  autoCenter: Phaser.Scale.Center,
+  parent: 'phaser-game',
   width: DEFAULT_WIDTH,
   height: DEFAULT_HEIGHT,
   scene: [PreloadScene, MainScene],

@@ -1,0 +1,16 @@
+1. scene 添加点击事件
+// this.input.on('pointerdown', () => {
+//   console.log('on-click')
+// })
+
+2. 添加文字
+let titles = this.add.text(100, 200, '测试点击', {
+  color: '#000'
+})
+
+3. 物体点击事件
+titles.setInteractive()
+titles.on('pointerdown', (event) => {
+  // this.input.emit('cc-click')
+  
+})
