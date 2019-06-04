@@ -20,3 +20,14 @@ titles.on('pointerdown', (event) => {
     var graphics = this.add.graphics();
     graphics.lineStyle(2, 0xff0000);
     graphics.strokeRect(player.x, player.y, 160, 260);
+
+4. 创建容器
+  let con_answer_1 = this.add.container(this.cameras.main.width - 100, 170, [sele_1, answ_1])
+    let con_answer_2 = this.add.container(this.cameras.main.width - 100, 286, [sele_2, answ_2])
+    let con_answer_3 = this.add.container(this.cameras.main.width - 100, 400, [sele_3, answ_3])
+    con_answer_1.setSize(sele_1.width * 0.6, sele_1.height * 0.6)
+    con_answer_2.setSize(sele_1.width * 0.6, sele_1.height * 0.6)
+    con_answer_3.setSize(sele_1.width * 0.6, sele_1.height * 0.6)
+    con_answer_1.setInteractive()
+    con_answer_2.setInteractive()
+    con_answer_3.setInteractive()
